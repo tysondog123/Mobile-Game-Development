@@ -1296,6 +1296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9214c3275d2e0dd4fa6cd2ede8eb1ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeviceInfoOverlay
+  infoSize: 9
+  InfoSizeX: 0
+  InfoSizeY: 0
 --- !u!1 &1155608486
 GameObject:
   m_ObjectHideFlags: 0
