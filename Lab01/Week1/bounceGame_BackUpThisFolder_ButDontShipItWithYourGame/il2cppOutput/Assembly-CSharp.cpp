@@ -5,11 +5,16 @@
 
 
 
+struct Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E;
 struct Dictionary_2_tEFC8016EC28460E6CE058A5F413FAB656883AA5F;
+struct UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E;
+struct Action_1U5BU5D_tB846E6FE2326CCD34124D1E5D70117C9D33DEE76;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct GUIStyleU5BU5D_t1BA4BCF4D4D32DF07E9B84F1750D964DF33B0FEC;
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
+struct InputBindingU5BU5D_t7E47E87B9CAE12B6F6A0659008B425C58D84BB57;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
@@ -21,10 +26,16 @@ struct GUISkin_t8C65CE1424D4B5D8D73022E266BDAD3BDE8612D9;
 struct GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580;
 struct GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct GrabCube_t6160FB57B329D88F9CCE052101030973B0A4157B;
+struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD;
+struct InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D;
+struct InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09;
+struct InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1;
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
 struct RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5;
 struct ResetCubes_t594B1D0F3898C3DF3C42CB5D9F5D94BD296F0501;
 struct Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F;
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B;
 struct String_t;
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700;
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
@@ -37,13 +48,16 @@ IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il
 IL2CPP_EXTERN_C RuntimeClass* GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____30DF9B244239F2EB437863FC4205AA677AC0141556F60C2426F2196198B9B050_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____3ADAF96CAA28B050A311A0DD6F40BCD1CB3FADA03D24827F21B6FA097D2E94B9_FieldInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteralD2ADAFCB289AB793E564135C9AC86358C0CBE66D;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____88C98A8B199A2E17CE87E2A2DA81CEB814788AFAD8DB9A392D1A8F090E713B1C_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____A5E20C39C706A1FF11589D6854C2294C1DDE8003142F6A1EA7DA1FBA95C0F1C5_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral792527AD320D909B59C0413E49239CB0216B6523;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m9E552507CE5EACBA6A9E0470BB5F15669379B956_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m8EE7EDCCEECA15A55F6D81B522B17AFB14AB25F9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431_RuntimeMethod_var;
 struct GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_com;
 struct GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_pinvoke;
 struct GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_com;
@@ -52,6 +66,7 @@ struct RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5_marshaled_com;
 
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 
 IL2CPP_EXTERN_C_BEGIN
@@ -108,6 +123,12 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 };
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
+};
+struct InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B 
+{
+	int32_t ___length;
+	Action_1_tEB0353AA1A112B6F2D921B58DCC9D9D4C0498E6E* ___firstValue;
+	Action_1U5BU5D_tB846E6FE2326CCD34124D1E5D70117C9D33DEE76* ___additionalValues;
 };
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
 {
@@ -179,7 +200,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D39_t5146E8D36DE702489D3A0258F4B6C5FB9E28E6BD 
+struct __StaticArrayInitTypeSizeU3D53_tF0B893D8110DACE0DE1C4B14D605D390774A4B80 
 {
 	union
 	{
@@ -189,12 +210,12 @@ struct __StaticArrayInitTypeSizeU3D39_t5146E8D36DE702489D3A0258F4B6C5FB9E28E6BD
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D39_t5146E8D36DE702489D3A0258F4B6C5FB9E28E6BD__padding[39];
+		uint8_t __StaticArrayInitTypeSizeU3D53_tF0B893D8110DACE0DE1C4B14D605D390774A4B80__padding[53];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D65_t8F6D15FF4D75FF0A7A09C933AE328FC1317BA1FA 
+struct __StaticArrayInitTypeSizeU3D92_t0BC92719F6F17895C1A1B9E55800EE5C73CA2F01 
 {
 	union
 	{
@@ -204,7 +225,7 @@ struct __StaticArrayInitTypeSizeU3D65_t8F6D15FF4D75FF0A7A09C933AE328FC1317BA1FA
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D65_t8F6D15FF4D75FF0A7A09C933AE328FC1317BA1FA__padding[65];
+		uint8_t __StaticArrayInitTypeSizeU3D92_t0BC92719F6F17895C1A1B9E55800EE5C73CA2F01__padding[92];
 	};
 };
 #pragma pack(pop, tp)
@@ -232,6 +253,13 @@ struct MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_com
 	int32_t ___TotalFiles;
 	int32_t ___IsEditorOnly;
 };
+struct CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 
+{
+	bool ___m_CannotMutateCallbacksArray;
+	InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B ___m_Callbacks;
+	InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B ___m_CallbacksToAdd;
+	InlinedArray_1_tC208D319D19C2B3DF550BD9CDC11549F23D8F91B ___m_CallbacksToRemove;
+};
 struct GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95  : public RuntimeObject
 {
 	intptr_t ___m_Ptr;
@@ -247,6 +275,10 @@ struct GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_com
 	intptr_t ___m_Ptr;
 	GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_com* ___m_SourceStyle;
 };
+struct InputActionType_t7E3615BDDF3C84F39712E5889559D3AD8E773108 
+{
+	int32_t ___value__;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -258,6 +290,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 {
 	intptr_t ___m_CachedPtr;
+};
+struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD 
+{
+	intptr_t ___m_Ptr;
 };
 struct RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5  : public RuntimeObject
 {
@@ -285,6 +321,14 @@ struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5
 	intptr_t ___value;
 };
 struct TextAnchor_tA46E794186AC1CD0F22888652F589EBF7DFDF830 
+{
+	int32_t ___value__;
+};
+struct ActionFlags_t639BD2944E073F8DD263CE2CA581FC62C401AB1E 
+{
+	int32_t ___value__;
+};
+struct Flags_t2ED4EFE461994B03533B3B524C8C2EA71315AAE6 
 {
 	int32_t ___value__;
 };
@@ -345,6 +389,48 @@ struct GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_com
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
+struct InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5 
+{
+	String_t* ___m_Name;
+	String_t* ___m_Id;
+	String_t* ___m_Path;
+	String_t* ___m_Interactions;
+	String_t* ___m_Processors;
+	String_t* ___m_Groups;
+	String_t* ___m_Action;
+	int32_t ___m_Flags;
+	String_t* ___m_OverridePath;
+	String_t* ___m_OverrideInteractions;
+	String_t* ___m_OverrideProcessors;
+};
+struct InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5_marshaled_pinvoke
+{
+	char* ___m_Name;
+	char* ___m_Id;
+	char* ___m_Path;
+	char* ___m_Interactions;
+	char* ___m_Processors;
+	char* ___m_Groups;
+	char* ___m_Action;
+	int32_t ___m_Flags;
+	char* ___m_OverridePath;
+	char* ___m_OverrideInteractions;
+	char* ___m_OverrideProcessors;
+};
+struct InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5_marshaled_com
+{
+	Il2CppChar* ___m_Name;
+	Il2CppChar* ___m_Id;
+	Il2CppChar* ___m_Path;
+	Il2CppChar* ___m_Interactions;
+	Il2CppChar* ___m_Processors;
+	Il2CppChar* ___m_Groups;
+	Il2CppChar* ___m_Action;
+	int32_t ___m_Flags;
+	Il2CppChar* ___m_OverridePath;
+	Il2CppChar* ___m_OverrideInteractions;
+	Il2CppChar* ___m_OverrideProcessors;
+};
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
@@ -353,6 +439,11 @@ struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinv
 };
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 {
+};
+struct Nullable_1_t11786EE914FE65E70B9671129B0DFC4D0DE80C44 
+{
+	bool ___hasValue;
+	InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5 ___value;
 };
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -387,20 +478,62 @@ struct GUISkin_t8C65CE1424D4B5D8D73022E266BDAD3BDE8612D9  : public ScriptableObj
 	GUISettings_tF2CA7E8B9F62F1FC013BFF053B5FA2709EBA3847* ___m_Settings;
 	Dictionary_2_tEFC8016EC28460E6CE058A5F413FAB656883AA5F* ___m_Styles;
 };
+struct InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* ___m_Asset;
+	String_t* ___m_ActionId;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action;
+};
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
 struct Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
 };
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
 };
+struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD  : public RuntimeObject
+{
+	String_t* ___m_Name;
+	int32_t ___m_Type;
+	String_t* ___m_ExpectedControlType;
+	String_t* ___m_Id;
+	String_t* ___m_Processors;
+	String_t* ___m_Interactions;
+	InputBindingU5BU5D_t7E47E87B9CAE12B6F6A0659008B425C58D84BB57* ___m_SingletonActionBindings;
+	int32_t ___m_Flags;
+	Nullable_1_t11786EE914FE65E70B9671129B0DFC4D0DE80C44 ___m_BindingMask;
+	int32_t ___m_BindingsStartIndex;
+	int32_t ___m_BindingsCount;
+	int32_t ___m_ControlStartIndex;
+	int32_t ___m_ControlCount;
+	int32_t ___m_ActionIndexInState;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* ___m_ActionMap;
+	CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 ___m_OnStarted;
+	CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 ___m_OnCanceled;
+	CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 ___m_OnPerformed;
+};
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+	UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E* ___m_SpriteChangeEvent;
 };
 struct DeviceInfoOverlay_tF7E4905F84FEC1C673F2E705109FD7EF6BC8B6F9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	float ___smoothedDelta;
 	GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___style;
+	int32_t ___infoSize;
+	float ___InfoSizeX;
+	float ___InfoSizeY;
+};
+struct GrabCube_t6160FB57B329D88F9CCE052101030973B0A4157B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___Grab;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___background;
 };
 struct ResetCubes_t594B1D0F3898C3DF3C42CB5D9F5D94BD296F0501  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -409,8 +542,8 @@ struct ResetCubes_t594B1D0F3898C3DF3C42CB5D9F5D94BD296F0501  : public MonoBehavi
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D65_t8F6D15FF4D75FF0A7A09C933AE328FC1317BA1FA ___30DF9B244239F2EB437863FC4205AA677AC0141556F60C2426F2196198B9B050;
-	__StaticArrayInitTypeSizeU3D39_t5146E8D36DE702489D3A0258F4B6C5FB9E28E6BD ___3ADAF96CAA28B050A311A0DD6F40BCD1CB3FADA03D24827F21B6FA097D2E94B9;
+	__StaticArrayInitTypeSizeU3D53_tF0B893D8110DACE0DE1C4B14D605D390774A4B80 ___88C98A8B199A2E17CE87E2A2DA81CEB814788AFAD8DB9A392D1A8F090E713B1C;
+	__StaticArrayInitTypeSizeU3D92_t0BC92719F6F17895C1A1B9E55800EE5C73CA2F01 ___A5E20C39C706A1FF11589D6854C2294C1DDE8003142F6A1EA7DA1FBA95C0F1C5;
 };
 struct GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_StaticFields
 {
@@ -468,9 +601,48 @@ struct GUISkin_t8C65CE1424D4B5D8D73022E266BDAD3BDE8612D9_StaticFields
 	SkinChangedDelegate_tA6D456E853D58AD2EF8A599F543C7E5BA8E94B98* ___m_SkinChanged;
 	GUISkin_t8C65CE1424D4B5D8D73022E266BDAD3BDE8612D9* ___current;
 };
+struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_StaticFields
+{
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InputActionEnableProfilerMarker;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InputActionDisableProfilerMarker;
+};
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF  : public RuntimeArray
 {
 	ALIGN_FIELD (8) GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* m_Items[1];
@@ -571,8 +743,10 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 };
 
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431_gshared (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIStyle_set_fontSize_m7F6DFD61AC55072C95DC3825B77FAE3F75F1CCFF (GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GUISkin_t8C65CE1424D4B5D8D73022E266BDAD3BDE8612D9* GUI_get_skin_m97EC9EB4628B311C0DB7DF9FB19FAD82D6790A1B (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* GUISkin_get_box_m21BE7FC56D903B95BAFAE8890425D330EA88D893 (GUISkin_t8C65CE1424D4B5D8D73022E266BDAD3BDE8612D9* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIStyle__ctor_m17492C8BACB0D28C7701C11500A7132F11B5F04E (GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* __this, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___0_other, const RuntimeMethod* method) ;
@@ -580,19 +754,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIStyle_set_alignment_mEDC62A775C9551DB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95* GUIStyle_get_normal_mDEA2808FBD692E505784BD9E521738B4321BCA8F (GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIStyleState_set_textColor_m5868D12858E6402247953BCCDDA7A543BE6084F1 (GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIStyle_set_fontSize_m7F6DFD61AC55072C95DC3825B77FAE3F75F1CCFF (GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Resolution_tDF215F567EEFFD07B9A8FB7CEACC08EA6B8B9525 Screen_get_currentResolution_m8FE4C43E4F6EF28E0B85EB94B6C69D1EC5687CCD (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F Resolution_get_refreshRateRatio_m22BCBB8F371F56D919D64E482270DD1A8E4A3637 (Resolution_tDF215F567EEFFD07B9A8FB7CEACC08EA6B8B9525* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Screen_get_dpi_mEEDAA2189F84A47BD69D62A611E031D5C59CFE8E (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SystemInfo_get_graphicsDeviceName_mA3F2E2CA587AD5E212A38AD7D28559FD017451A2 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_get_graphicsMemorySize_m05C833741F5F5C06FE9B4B9F50078A21E9E71ACF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_get_systemMemorySize_m3BFE40CF5A43FEAB94F5C552A47D04ECD88B771E (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_m918500C1EFB475181349A79989BB79BB36102894 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIContent__ctor_mD2BDF82C1E1F75DEEF36F2C8EDB60FFB49EE4DBC (GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* __this, String_t* ___0_text, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 GUIStyle_CalcSize_m3015BAC288A5D6D29C0596ECE8117C8F9DFF9A76 (GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* __this, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* ___0_content, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUI_Label_m0D7BA53414421D71010DFF628EAA6CCCB3DE737E (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___0_position, String_t* ___1_text, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___2_style, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) ;
+inline bool InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*, const RuntimeMethod*))InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* GameObject_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m8EE7EDCCEECA15A55F6D81B522B17AFB14AB25F9 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546 (SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 inline Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* GameObject_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m9E552507CE5EACBA6A9E0470BB5F15669379B956 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
@@ -617,23 +805,34 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71896
+// Method Definition Index: 71884
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay_Start_m854B0A0620E0CDF1366E24AA1D76CE529B6AD126 (DeviceInfoOverlay_tF7E4905F84FEC1C673F2E705109FD7EF6BC8B6F9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:13>
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:16>
 		return;
 	}
 }
-// Method Definition Index: 71897
+// Method Definition Index: 71885
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay_Update_m010D748591CCC74E3317D27D83DA29BFCA68963D (DeviceInfoOverlay_tF7E4905F84FEC1C673F2E705109FD7EF6BC8B6F9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:19>
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:21>
+		int32_t L_0 = __this->___infoSize;
+		__this->___InfoSizeX = ((float)L_0);
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:22>
+		int32_t L_1 = __this->___infoSize;
+		__this->___InfoSizeY = ((float)((int32_t)(L_1/2)));
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:23>
+		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_2 = __this->___style;
+		int32_t L_3 = __this->___infoSize;
+		NullCheck(L_2);
+		GUIStyle_set_fontSize_m7F6DFD61AC55072C95DC3825B77FAE3F75F1CCFF(L_2, L_3, NULL);
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:24>
 		return;
 	}
 }
-// Method Definition Index: 71898
+// Method Definition Index: 71886
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay_OnGUI_m48C31416FD52C836FE9F1F80BE5F758217BACC73 (DeviceInfoOverlay_tF7E4905F84FEC1C673F2E705109FD7EF6BC8B6F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -642,8 +841,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay_OnGUI_m48C31416FD52C83
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD2ADAFCB289AB793E564135C9AC86358C0CBE66D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral792527AD320D909B59C0413E49239CB0216B6523);
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
@@ -653,15 +853,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay_OnGUI_m48C31416FD52C83
 	Resolution_tDF215F567EEFFD07B9A8FB7CEACC08EA6B8B9525 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:22>
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:27>
 		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_0 = __this->___style;
 		if (L_0)
 		{
-			goto IL_004b;
+			goto IL_003e;
 		}
 	}
 	{
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:24>
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:29>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUISkin_t8C65CE1424D4B5D8D73022E266BDAD3BDE8612D9* L_1;
 		L_1 = GUI_get_skin_m97EC9EB4628B311C0DB7DF9FB19FAD82D6790A1B(NULL);
@@ -672,11 +872,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay_OnGUI_m48C31416FD52C83
 		GUIStyle__ctor_m17492C8BACB0D28C7701C11500A7132F11B5F04E(L_3, L_2, NULL);
 		__this->___style = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___style), (void*)L_3);
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:25>
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:30>
 		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_4 = __this->___style;
 		NullCheck(L_4);
 		GUIStyle_set_alignment_mEDC62A775C9551DBD1FEE4043F115E034EF12937(L_4, 0, NULL);
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:26>
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:31>
 		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_5 = __this->___style;
 		NullCheck(L_5);
 		GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95* L_6;
@@ -685,57 +885,94 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay_OnGUI_m48C31416FD52C83
 		L_7 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
 		NullCheck(L_6);
 		GUIStyleState_set_textColor_m5868D12858E6402247953BCCDDA7A543BE6084F1(L_6, L_7, NULL);
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:27>
-		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_8 = __this->___style;
-		NullCheck(L_8);
-		GUIStyle_set_fontSize_m7F6DFD61AC55072C95DC3825B77FAE3F75F1CCFF(L_8, ((int32_t)18), NULL);
 	}
 
-IL_004b:
+IL_003e:
 	{
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:33>
-		float L_9 = __this->___smoothedDelta;
-		V_0 = ((float)((1.0f)/L_9));
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:35>
-		float L_10 = V_0;
-		float L_11 = L_10;
-		RuntimeObject* L_12 = Box(il2cpp_defaults.single_class, &L_11);
-		Resolution_tDF215F567EEFFD07B9A8FB7CEACC08EA6B8B9525 L_13;
-		L_13 = Screen_get_currentResolution_m8FE4C43E4F6EF28E0B85EB94B6C69D1EC5687CCD(NULL);
-		V_3 = L_13;
-		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_14;
-		L_14 = Resolution_get_refreshRateRatio_m22BCBB8F371F56D919D64E482270DD1A8E4A3637((&V_3), NULL);
-		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_15 = L_14;
-		RuntimeObject* L_16 = Box(RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F_il2cpp_TypeInfo_var, &L_15);
-		String_t* L_17;
-		L_17 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteralD2ADAFCB289AB793E564135C9AC86358C0CBE66D, L_12, L_16, NULL);
-		V_1 = L_17;
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:39>
-		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_18 = __this->___style;
-		String_t* L_19 = V_1;
-		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_20 = (GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2*)il2cpp_codegen_object_new(GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_il2cpp_TypeInfo_var);
-		GUIContent__ctor_mD2BDF82C1E1F75DEEF36F2C8EDB60FFB49EE4DBC(L_20, L_19, NULL);
-		NullCheck(L_18);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21;
-		L_21 = GUIStyle_CalcSize_m3015BAC288A5D6D29C0596ECE8117C8F9DFF9A76(L_18, L_20, NULL);
-		V_2 = L_21;
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:38>
+		float L_8 = __this->___smoothedDelta;
+		V_0 = ((float)((1.0f)/L_8));
 		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:40>
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_22 = V_2;
-		float L_23 = L_22.___x;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_24 = V_2;
-		float L_25 = L_24.___y;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_26;
-		memset((&L_26), 0, sizeof(L_26));
-		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_26), (40.0f), (40.0f), ((float)il2cpp_codegen_add(L_23, (80.0f))), ((float)il2cpp_codegen_add(L_25, (80.0f))), NULL);
-		String_t* L_27 = V_1;
-		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_28 = __this->___style;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)6);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_10 = L_9;
+		float L_11 = V_0;
+		float L_12 = L_11;
+		RuntimeObject* L_13 = Box(il2cpp_defaults.single_class, &L_12);
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_13);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_13);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_14 = L_10;
+		Resolution_tDF215F567EEFFD07B9A8FB7CEACC08EA6B8B9525 L_15;
+		L_15 = Screen_get_currentResolution_m8FE4C43E4F6EF28E0B85EB94B6C69D1EC5687CCD(NULL);
+		V_3 = L_15;
+		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_16;
+		L_16 = Resolution_get_refreshRateRatio_m22BCBB8F371F56D919D64E482270DD1A8E4A3637((&V_3), NULL);
+		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_17 = L_16;
+		RuntimeObject* L_18 = Box(RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F_il2cpp_TypeInfo_var, &L_17);
+		NullCheck(L_14);
+		ArrayElementTypeCheck (L_14, L_18);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_18);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_19 = L_14;
+		float L_20;
+		L_20 = Screen_get_dpi_mEEDAA2189F84A47BD69D62A611E031D5C59CFE8E(NULL);
+		float L_21 = L_20;
+		RuntimeObject* L_22 = Box(il2cpp_defaults.single_class, &L_21);
+		NullCheck(L_19);
+		ArrayElementTypeCheck (L_19, L_22);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject*)L_22);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_23 = L_19;
+		String_t* L_24;
+		L_24 = SystemInfo_get_graphicsDeviceName_mA3F2E2CA587AD5E212A38AD7D28559FD017451A2(NULL);
+		NullCheck(L_23);
+		ArrayElementTypeCheck (L_23, L_24);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_24);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_25 = L_23;
+		int32_t L_26;
+		L_26 = SystemInfo_get_graphicsMemorySize_m05C833741F5F5C06FE9B4B9F50078A21E9E71ACF(NULL);
+		int32_t L_27 = ((int32_t)(L_26/((int32_t)1024)));
+		RuntimeObject* L_28 = Box(il2cpp_defaults.int32_class, &L_27);
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, L_28);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject*)L_28);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_29 = L_25;
+		int32_t L_30;
+		L_30 = SystemInfo_get_systemMemorySize_m3BFE40CF5A43FEAB94F5C552A47D04ECD88B771E(NULL);
+		int32_t L_31 = ((int32_t)(L_30/((int32_t)1024)));
+		RuntimeObject* L_32 = Box(il2cpp_defaults.int32_class, &L_31);
+		NullCheck(L_29);
+		ArrayElementTypeCheck (L_29, L_32);
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject*)L_32);
+		String_t* L_33;
+		L_33 = String_Format_m918500C1EFB475181349A79989BB79BB36102894(_stringLiteral792527AD320D909B59C0413E49239CB0216B6523, L_29, NULL);
+		V_1 = L_33;
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:44>
+		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_34 = __this->___style;
+		String_t* L_35 = V_1;
+		GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* L_36 = (GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2*)il2cpp_codegen_object_new(GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_il2cpp_TypeInfo_var);
+		GUIContent__ctor_mD2BDF82C1E1F75DEEF36F2C8EDB60FFB49EE4DBC(L_36, L_35, NULL);
+		NullCheck(L_34);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_37;
+		L_37 = GUIStyle_CalcSize_m3015BAC288A5D6D29C0596ECE8117C8F9DFF9A76(L_34, L_36, NULL);
+		V_2 = L_37;
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:45>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_38 = V_2;
+		float L_39 = L_38.___x;
+		float L_40 = __this->___InfoSizeX;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_41 = V_2;
+		float L_42 = L_41.___y;
+		float L_43 = __this->___InfoSizeY;
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_44;
+		memset((&L_44), 0, sizeof(L_44));
+		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_44), (40.0f), (40.0f), ((float)il2cpp_codegen_add(L_39, L_40)), ((float)il2cpp_codegen_add(L_42, L_43)), NULL);
+		String_t* L_45 = V_1;
+		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_46 = __this->___style;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
-		GUI_Label_m0D7BA53414421D71010DFF628EAA6CCCB3DE737E(L_26, L_27, L_28, NULL);
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:41>
+		GUI_Label_m0D7BA53414421D71010DFF628EAA6CCCB3DE737E(L_44, L_45, L_46, NULL);
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/DeviceInfoOverlay.cs:46>
 		return;
 	}
 }
-// Method Definition Index: 71899
+// Method Definition Index: 71887
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay__ctor_mD0945F1EFFE3B316C5E2DB8BA4EF6C2865323C25 (DeviceInfoOverlay_tF7E4905F84FEC1C673F2E705109FD7EF6BC8B6F9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -753,7 +990,97 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeviceInfoOverlay__ctor_mD0945F1EFFE3B31
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71900
+// Method Definition Index: 71888
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabCube_Start_m6508425DC83F150E85C234168F2444CFAD0E9D74 (GrabCube_t6160FB57B329D88F9CCE052101030973B0A4157B* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/GrabCube.cs:12>
+		return;
+	}
+}
+// Method Definition Index: 71889
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabCube_Update_m14A44FBF6415301BBAAB7BFA19119B3A4F880FCE (GrabCube_t6160FB57B329D88F9CCE052101030973B0A4157B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m8EE7EDCCEECA15A55F6D81B522B17AFB14AB25F9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/GrabCube.cs:17>
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_0 = __this->___Grab;
+		NullCheck(L_0);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1;
+		L_1 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(L_0, NULL);
+		NullCheck(L_1);
+		bool L_2;
+		L_2 = InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431(L_1, InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431_RuntimeMethod_var);
+		bool L_3 = L_2;
+		RuntimeObject* L_4 = Box(il2cpp_defaults.boolean_class, &L_3);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/GrabCube.cs:18>
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_5 = __this->___Grab;
+		NullCheck(L_5);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6;
+		L_6 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(L_5, NULL);
+		NullCheck(L_6);
+		bool L_7;
+		L_7 = InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431(L_6, InputAction_ReadValue_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mDDDE5696826C7F74925D950F06671083FD179431_RuntimeMethod_var);
+		if (!L_7)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/GrabCube.cs:20>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___background;
+		NullCheck(L_8);
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_9;
+		L_9 = GameObject_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m8EE7EDCCEECA15A55F6D81B522B17AFB14AB25F9(L_8, GameObject_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m8EE7EDCCEECA15A55F6D81B522B17AFB14AB25F9_RuntimeMethod_var);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10;
+		L_10 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
+		NullCheck(L_9);
+		SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546(L_9, L_10, NULL);
+		return;
+	}
+
+IL_0042:
+	{
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/GrabCube.cs:24>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___background;
+		NullCheck(L_11);
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_12;
+		L_12 = GameObject_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m8EE7EDCCEECA15A55F6D81B522B17AFB14AB25F9(L_11, GameObject_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m8EE7EDCCEECA15A55F6D81B522B17AFB14AB25F9_RuntimeMethod_var);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13;
+		L_13 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
+		NullCheck(L_12);
+		SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546(L_12, L_13, NULL);
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Assets/GrabCube.cs:27>
+		return;
+	}
+}
+// Method Definition Index: 71890
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabCube__ctor_mE2564C3D33DB2054367A68F6CE57CC0F7B1335B0 (GrabCube_t6160FB57B329D88F9CCE052101030973B0A4157B* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71891
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResetCubes_Start_m6887E4C08076578B05F26BE6C4CBC70EFB2DE01C (ResetCubes_t594B1D0F3898C3DF3C42CB5D9F5D94BD296F0501* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -816,7 +1143,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 71901
+// Method Definition Index: 71892
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResetCubes_posReset_m43092187C2639B88CC71E612BFA3ECA39156CF14 (ResetCubes_t594B1D0F3898C3DF3C42CB5D9F5D94BD296F0501* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -898,7 +1225,7 @@ IL_0062:
 		return;
 	}
 }
-// Method Definition Index: 71902
+// Method Definition Index: 71893
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResetCubes__ctor_m7A7F2F4E4485C037BF51EBC48456892C430865C6 (ResetCubes_t594B1D0F3898C3DF3C42CB5D9F5D94BD296F0501* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -915,42 +1242,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResetCubes__ctor_m7A7F2F4E4485C037BF51EB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 71903
+// Method Definition Index: 71894
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____30DF9B244239F2EB437863FC4205AA677AC0141556F60C2426F2196198B9B050_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____3ADAF96CAA28B050A311A0DD6F40BCD1CB3FADA03D24827F21B6FA097D2E94B9_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____88C98A8B199A2E17CE87E2A2DA81CEB814788AFAD8DB9A392D1A8F090E713B1C_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____A5E20C39C706A1FF11589D6854C2294C1DDE8003142F6A1EA7DA1FBA95C0F1C5_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs:45>
+		//<source_info:C:/Users/S25156239/Documents/GitHub/Mobile-Game-Development/Lab01/Week1/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs:48>
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)65));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)92));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____30DF9B244239F2EB437863FC4205AA677AC0141556F60C2426F2196198B9B050_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____A5E20C39C706A1FF11589D6854C2294C1DDE8003142F6A1EA7DA1FBA95C0F1C5_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)39));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)53));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____3ADAF96CAA28B050A311A0DD6F40BCD1CB3FADA03D24827F21B6FA097D2E94B9_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____88C98A8B199A2E17CE87E2A2DA81CEB814788AFAD8DB9A392D1A8F090E713B1C_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = 2;
-		(&V_0)->___TotalTypes = 2;
+		(&V_0)->___TotalFiles = 3;
+		(&V_0)->___TotalTypes = 3;
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 71904
+// Method Definition Index: 71895
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1056,7 +1383,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 35272
+// Method Definition Index: 35274
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
 {
 	{
@@ -1067,7 +1394,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 33943
+// Method Definition Index: 33945
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) 
 {
 	{
@@ -1087,7 +1414,18 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BE
 		return;
 	}
 }
-// Method Definition Index: 35556
+// Method Definition Index: 35273
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color.cs:930>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (1.0f), (0.0f), (0.0f), (1.0f), NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 35558
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -1105,7 +1443,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_4;
 	}
 }
-// Method Definition Index: 35557
+// Method Definition Index: 35559
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -1124,7 +1462,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_4;
 	}
 }
-// Method Definition Index: 35526
+// Method Definition Index: 35528
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -1138,7 +1476,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 35242
+// Method Definition Index: 35244
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{

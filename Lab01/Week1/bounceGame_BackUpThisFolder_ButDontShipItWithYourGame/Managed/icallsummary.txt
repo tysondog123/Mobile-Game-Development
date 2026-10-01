@@ -1516,6 +1516,7 @@ UnityEngine.SpriteRenderer::get_flipX_Injected
 UnityEngine.SpriteRenderer::get_flipY_Injected
 UnityEngine.SpriteRenderer::get_sprite_Injected
 UnityEngine.SpriteRenderer::get_size_Injected
+UnityEngine.SpriteRenderer::set_color_Injected
 UnityEngine.SpriteRenderer::set_hasSpriteChangeEvents_Injected
 UnityEngine.SpriteRenderer::set_sprite_Injected
 UnityEngine.SpriteRenderer::get_drawMode_Injected
@@ -1544,9 +1545,11 @@ UnityEngine.SystemInfo::SupportsStoreAndResolveAction
 UnityEngine.SystemInfo::SupportsTextureFormatNative
 UnityEngine.SystemInfo::UsesReversedZBuffer
 UnityEngine.SystemInfo::GetGraphicsDeviceVendorID
+UnityEngine.SystemInfo::GetGraphicsMemorySize
 UnityEngine.SystemInfo::GetGraphicsShaderLevel
 UnityEngine.SystemInfo::GetMaxRenderTextureSize
 UnityEngine.SystemInfo::GetMaxTextureSize
+UnityEngine.SystemInfo::GetPhysicalMemoryMB
 UnityEngine.SystemInfo::GetRenderTextureSupportedMSAASampleCount_Injected
 UnityEngine.SystemInfo::GetTiledRenderTargetStorageSize
 UnityEngine.SystemInfo::MaxTiledPixelStorageSize

@@ -1,10 +1,27 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
+using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
+using TouchPhase = UnityEngine.InputSystem.TouchPhase;
+
 
 public class FireProjectile : MonoBehaviour
 {
+    bool fire;
+    bool FireDelay = true;
+    [SerializeField] GameObject projectile;
+    private void Update()
+    {
+        foreach (var touch in Touch.activeTouches) 
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                projectile.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+        }
+    }
    
-    bool FireDelay =true;
     public void fireProjectile(GameObject Projectile, GameObject SpawnPoint, Vector3 Direction,string Tag)
     {
         
@@ -39,7 +56,6 @@ public class FireProjectile : MonoBehaviour
 
         if (FireDelay)
         {
-            Debug.Log("Fire");
             StartCoroutine(Fire(Projectile, SpawnPoint, Direction, Tag,color));
         }
 

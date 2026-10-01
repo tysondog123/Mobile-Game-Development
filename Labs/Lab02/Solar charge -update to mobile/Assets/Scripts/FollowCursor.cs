@@ -29,7 +29,7 @@ public class FollowCursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // gets the cursours position reletive to the screen
+        /*/ gets the cursours position reletive to the screen
         Vector3 MousePos = Input.mousePosition;
         MousePos.z = 0;
         MousePos = Camera.main.ScreenToWorldPoint(MousePos);
@@ -42,7 +42,7 @@ public class FollowCursor : MonoBehaviour
 
         //set's the pointers rotation so it points to the cursor
         quaternion Target = Quaternion.Euler(0, 0, -Radians);
-        Pointer.transform.rotation = Target;
+        Pointer.transform.rotation = Target;*/
 
     }
     public void onclick()
