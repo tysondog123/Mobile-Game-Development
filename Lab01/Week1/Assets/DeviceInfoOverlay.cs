@@ -7,20 +7,21 @@ public class DeviceInfoOverlay : MonoBehaviour
     float smoothedDelta = 1f / 30f;
     GUIStyle style;
     public int infoSize;
-    public float InfoSizeX;
-    public float InfoSizeY;
+    float InfoSizeX=0;
+    float InfoSizeY=0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
     // Update is called once per frame
     void Update()
     {
         InfoSizeX = infoSize;
         InfoSizeY= infoSize/2;
         style.fontSize = infoSize;
+        smoothedDelta = Time.unscaledDeltaTime;
     }
     void OnGUI()
     {
