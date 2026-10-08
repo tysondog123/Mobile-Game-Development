@@ -14,13 +14,29 @@
 
 
 ## issues with swaping aspect ratio
-| issue | where |
+| issue | where | Aspect compered to 16:9 as normal |
 | -- | -- | 
-| HP box Streches down| top left|
-| HP Bar to low | Top middel |
-| Pause Title Streching | Top of Pause menu |
-|HP UI Covers pause ui | Top left |
-![Normal UI Image](./UI Evidence/Normal UI.png)
-![Normal Pause Image](./UI Evidence/Normal Pause.png)
-![4:3 UI Image](./UI Evidence/4-3 UI.png)
-![4:3 Pause Image](./UI Evidence/4-3 Pause.png)
+| HP box Streches down| top left| 4:3 |
+| HP Bar to low | Top middel | 4:3 |
+| Pause Title Streching | Top of Pause menu | 4:3 |
+| HP UI Covers pause ui | Top left | 4:3 |
+| HP UI is not visible | Top Middle | 20:9 |
+
+![Normal_1_UI__Image](./UI_Evidence/Normal_UI.png)
+![Normal Pause Image](./UI_Evidence/Normal_Pause.png)
+![4:3_UI_Image](./UI_Evidence/4-3_UI.png)
+![4:3_Pause Image](./UI_Evidence/4-3_Pause.png)
+![20:9_UI_Image](./UI_Evidence/20-9_UI.png)
+![20:9_Pause Image](./UI_Evidence/20-9_Pause.png)
+
+
+## UI Scaler
+Current canvas scaler : Scale with screen size, This canvas is used for all 3, my refrence resolution is 1920 x 1080
+
+![Original UI scaler](./UI_Evidence/Original_canvas_scaler_options.png)
+These are the original settings that i used for the scaler options on my Canvas, after testing the diffrent settings ive changed the settings to 
+the ones shown bellow due to it making my UI look the best over multiple diffrent diffrent aspect ratios, the only change was changing the
+match width and hight to 0.5 due to most of my ui being closer to a cube than a rectangle
+![Original UI scaler](./UI_Evidence/New_canvas_scaler_options.png)
+
+
