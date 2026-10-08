@@ -36,6 +36,11 @@ public class PlayerControlls : MonoBehaviour
         //sets the rigidbodys Linear velocity to be equal to the provided vector 2 timed by the speed veria variable
         rb.linearVelocity = context.ReadValue<Vector2>() * (Speed * stats.SpeedBoost[stats.SpeedLVL]);
     }
+    public void Move(Vector2 Direction)
+    {
+        //sets the rigidbodys Linear velocity to be equal to the provided vector 2 timed by the speed veria variable
+        rb.linearVelocity = Direction * (Speed * stats.SpeedBoost[stats.SpeedLVL]);
+    }
     public void Teleport(InputAction.CallbackContext context)
     {
         // checks if the player has unlocked the teleport abilitys. if they have and press the correct key, adds specific Value to Transform position
