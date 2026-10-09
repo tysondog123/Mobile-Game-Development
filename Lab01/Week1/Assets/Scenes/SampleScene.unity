@@ -1620,13 +1620,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568999282}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47f18bbdcf9a22845afc72033d6ff18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabCube
-  Grab: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  background: {fileID: 1731515871}
+--- !u!114 &1245417551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568999282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851abfff557b7e74287181309a4fe7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TiltTest
+  deadZone: 0.05
+  sensetivity: 2
 --- !u!1 &1257398982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2658,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2232458516296721477, guid: b461a4447e841f74d8c040ccafabf663, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1245417547}
+    - targetCorrespondingSourceObject: {fileID: 2232458516296721477, guid: b461a4447e841f74d8c040ccafabf663, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1245417551}
   m_SourcePrefab: {fileID: 100100000, guid: b461a4447e841f74d8c040ccafabf663, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
