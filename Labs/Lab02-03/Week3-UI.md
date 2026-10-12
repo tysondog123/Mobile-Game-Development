@@ -22,12 +22,12 @@
 | HP UI Covers pause ui | Top left | 4:3 |
 | HP UI is not visible | Top Middle | 20:9 |
 
-![Normal_1_UI__Image](./UI_Evidence/Normal_UI.png)
-![Normal Pause Image](./UI_Evidence/Normal_Pause.png)
-![4:3_UI_Image](./UI_Evidence/4-3_UI.png)
-![4:3_Pause Image](./UI_Evidence/4-3_Pause.png)
-![20:9_UI_Image](./UI_Evidence/20-9_UI.png)
-![20:9_Pause Image](./UI_Evidence/20-9_Pause.png)
+![Normal_1_UI__Image](./UI%20Evidence/Normal%20UI.png)
+![Normal Pause Image](./UI%20Evidence/Normal%20Pause.png)
+![4:3_UI_Image](./UI%20Evidence/4-3%20UI.png)
+![4:3_Pause Image](./UI%20Evidence/4-3%20Pause.png)
+![20:9_UI_Image](./UI%20Evidence/20-9%20UI.png)
+![20:9_Pause Image](./UI%20Evidence/20-9%20Pause.png)
 
 
 ## UI Scaler
