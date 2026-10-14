@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -16,6 +17,7 @@ public class PlayerControlls : MonoBehaviour
 
     public TextMeshProUGUI HpText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,6 +32,15 @@ public class PlayerControlls : MonoBehaviour
         //Updates UI HP text to be current HP
         HpText.text = "HP: " + GetComponent<HpController>().HP.ToString() +"/"+ GetComponent<HpController>().MaxHp.ToString();
     }
+
+    private void OnApplicationPause(bool pause)
+    {
+        Time.timeScale = 0f;
+        PauseMenu.SetActive(true);
+    }
+
+
+
     // Ataches to the player input veriable and runs whenver a key releted to the move event is pressed or held, it also provides a vector 2 value
     public void Move(InputAction.CallbackContext context)
     {

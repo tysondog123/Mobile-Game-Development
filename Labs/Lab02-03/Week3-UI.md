@@ -33,10 +33,20 @@
 ## UI Scaler
 Current canvas scaler : Scale with screen size, This canvas is used for all 3, my refrence resolution is 1920 x 1080
 
-![Original UI scaler](./UI_Evidence/Original_canvas_scaler_options.png)
+![Original UI scaler](./UI%20Evidence/Original%20canvas%20scaler%20options.png)
 These are the original settings that i used for the scaler options on my Canvas, after testing the diffrent settings ive changed the settings to 
 the ones shown bellow due to it making my UI look the best over multiple diffrent diffrent aspect ratios, the only change was changing the
 match width and hight to 0.5 due to most of my ui being closer to a cube than a rectangle
-![Original UI scaler](./UI_Evidence/New_canvas_scaler_options.png)
+![Original UI scaler](./UI%20Evidence/New%20canvas%20scaler%20options.png)
 
+## a
 
+-> got to 
+<- go back
+
+| | Gameplay | Pause | Settings | Restart Confirmation |
+| -- | -- | -- | -- | -- |
+| Gameplay | Already here | Player presses pause | -> pause - Settings | -> Pause -> restart |
+| Pause | Press resume | Already here | Press settings button | Press restart  |
+| Settings | <- Pause->resume | press back button | Already here | <- pause -> restart |
+| Restart Confirmation | <- pause -> resume | press back button | <- pause -> settings | Already here |
