@@ -7,6 +7,8 @@ public class EnemyControlller : MonoBehaviour
     [SerializeField]
     GameObject projectile;
     [SerializeField]
+    float timeBetweenShots;
+    [SerializeField]
     float moveSpeed= 1f;
     [SerializeField]
     float stopDistance =5f;
@@ -31,7 +33,7 @@ public class EnemyControlller : MonoBehaviour
     {
         canShoot = false;
         Projectile spawned = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Projectile>();
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
     }
     private void OnDestroy()

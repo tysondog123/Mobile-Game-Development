@@ -108,6 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyControlller
   player: {fileID: 0}
   projectile: {fileID: 1844733683522255467, guid: f20adff0c67c27a4cb8124887109de33, type: 3}
+  timeBetweenShots: 1.5
   moveSpeed: 2
   stopDistance: 4
   spawner: {fileID: 0}
