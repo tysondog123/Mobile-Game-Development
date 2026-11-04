@@ -8,6 +8,9 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     float stopDistance = 5f;
     Vector3 dir;
+
+    [SerializeField]
+    int Damage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,7 +28,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerControlls>().takeDamage(1);
+            collision.GetComponent<PlayerControlls>().takeDamage(Damage);
             Destroy(gameObject);
         }
     }
