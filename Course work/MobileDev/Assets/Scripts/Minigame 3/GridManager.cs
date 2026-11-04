@@ -1,3 +1,4 @@
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class GridManager : MonoBehaviour
@@ -10,6 +11,10 @@ public class GridManager : MonoBehaviour
 
     [SerializeField]
     GameObject temp;
+
+    // temp --------------------------------
+    public GameObject toSpawn;
+    //------------------------------------
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,8 +47,28 @@ public class GridManager : MonoBehaviour
         }
         return 0;
     }
-    public int AddItem()
+    public int AddItem(int UDI)
     {
+        grid[0][0] = Instantiate(toSpawn, new Vector2(0, 0), Quaternion.identity);
         return 0;
+    }
+    public int MoveOnGrid(Vector2 CurrentIndex,Vector2 GoalIndex)
+    {
+        GameObject temp = grid[(int)CurrentIndex.y][(int)CurrentIndex.x];
+        
+        if (grid[(int)GoalIndex.y][(int)GoalIndex.x]==null)
+        {
+           temp.transform.position = GoalIndex;
+           grid[(int)GoalIndex.y][(int)GoalIndex.x] = temp;
+           grid[(int)CurrentIndex.y][(int)CurrentIndex.x] = null;
+           return 0; 
+        }
+        else
+        {
+            
+            Debug.Log("blocked");
+            return 1;
+        }
+        
     }
 }
