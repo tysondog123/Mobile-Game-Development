@@ -12,7 +12,7 @@ abstract class Component : MonoBehaviour
     protected Sprite sprite;
     [SerializeField]
     int UID;
-    Vector2 handDirection = new Vector2(0f,1f);
+    protected Vector2 handDirection = new Vector2(0f,1f);
     GameObject Resource;
     int priorityOrder =0;
 

@@ -49,12 +49,23 @@ public class GridManager : MonoBehaviour
     }
     public int AddItem(int UDI)
     {
-        grid[0][0] = Instantiate(toSpawn, new Vector2(0, 0), Quaternion.identity);
+        grid[2][0] = Instantiate(toSpawn, new Vector2(0, 2), Quaternion.identity);
         return 0;
+    }
+    public GameObject GetObjectAtIndex(Vector2 Index)
+    {
+        if (grid[(int)Index.y][(int)Index.x] == null)
+        {
+            return null;
+        }
+        else
+        {
+            return grid[(int)Index.y][(int)Index.x];
+        }
     }
     public int MoveOnGrid(Vector2 CurrentIndex,Vector2 GoalIndex)
     {
-        GameObject temp = grid[(int)CurrentIndex.y][(int)CurrentIndex.x];
+        GameObject temp = GetObjectAtIndex(CurrentIndex);
         
         if (grid[(int)GoalIndex.y][(int)GoalIndex.x]==null)
         {
@@ -65,8 +76,6 @@ public class GridManager : MonoBehaviour
         }
         else
         {
-            
-            Debug.Log("blocked");
             return 1;
         }
         
