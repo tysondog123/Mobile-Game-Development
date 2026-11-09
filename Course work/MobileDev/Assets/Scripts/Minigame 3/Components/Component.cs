@@ -20,13 +20,21 @@ abstract class Component : MonoBehaviour
     {
         gridManager  = FindFirstObjectByType<GridManager>();
         GetComponent<SpriteRenderer>().sprite = sprite;
-        StartCoroutine(ProccesTime());
+        //StartCoroutine(ProccesTime());
     }
-    public IEnumerator ProccesTime()
+    /*public IEnumerator ProccesTime()
     {
         yield return new WaitForSeconds(1);
         Activate();
         StartCoroutine(ProccesTime());
-    }
+    }*/
     public abstract int Activate();
+    public Sprite GetSprite()
+    {
+        return sprite;
+    }
+    public int GetUID()
+    {
+        return UID;
+    }
 }
