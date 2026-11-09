@@ -103,11 +103,7 @@ GameObject:
   - component: {fileID: 1589848388115133257}
   - component: {fileID: 742512505497055818}
   m_Layer: 0
-<<<<<<<< Updated upstream:Course work/MobileDev/Assets/Prefabs/Components/Mover.prefab
   m_Name: Mover
-========
-  m_Name: Component_Mover
->>>>>>>> Stashed changes:Course work/MobileDev/Assets/Prefabs/Components/Component_Mover.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -2,7 +2,6 @@ using UnityEngine;
 
 class Puller : Component
 {
-<<<<<<< Updated upstream
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override int Activate()
     {
@@ -18,11 +17,5 @@ class Puller : Component
             return 1;
         }
         
-=======
-    public override int Activate()
-    {
-        gridManager.MoveOnGrid(((Vector2)transform.position + handDirection*2), ((Vector2)transform.position + handDirection));
-        return 0;
->>>>>>> Stashed changes
     }
 }

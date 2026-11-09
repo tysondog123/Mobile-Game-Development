@@ -2,7 +2,6 @@ using UnityEngine;
 
 class Pusher : Component
 {
-<<<<<<< Updated upstream
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override int Activate()
     {
@@ -18,11 +17,5 @@ class Pusher : Component
             return 1;
         }
         
-=======
-    public override int Activate()
-    {
-        gridManager.MoveOnGrid(((Vector2)transform.position + handDirection), ((Vector2)transform.position + (handDirection * 2)));
-        return 0;
->>>>>>> Stashed changes
     }
 }
