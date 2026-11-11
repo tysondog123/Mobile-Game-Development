@@ -1,4 +1,6 @@
 using Microsoft.Win32.SafeHandles;
+using NUnit.Framework;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -7,33 +9,80 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class InputController : MonoBehaviour
 {
-    MiniGame3Manager manager;
-    InputActionAsset Tap;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    enum Currentminigame 
     {
-        manager = FindFirstObjectByType<MiniGame3Manager>();
+        minigame1,
+        minigame2,
+        minigame3
+    }
+    Currentminigame minigame;
+    public MiniGame1Manager manager1;
+    //MiniGame2Manager manager2;
+    public MiniGame3Manager manager3;
+
+    // Definitions of touchs
+    [SerializeField]
+    float SwipeLength;
+    [SerializeField]
+    float holdTime;
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach(var touch in Touch.activeTouches)
+        foreach (var touch in Touch.activeTouches)
         {
-            Vector2 input = Camera.main.ScreenToWorldPoint(touch.screenPosition);
-            Vector2 pos = new Vector2(Mathf.RoundToInt(input.x), Mathf.RoundToInt(input.y));
-            Debug.Log(pos);
-            if (touch.phase == TouchPhase.Began && pos.x<=manager.gridManager.GetGridSize().x-1&& pos.x >= 0&& pos.y <= manager.gridManager.GetGridSize().y-1 && pos.y >= 0)
+            if (touch.ended && touch.time - touch.startTime > holdTime)
             {
-                Debug.Log("Tap");
-                manager.gridManager.AddItem(pos);
+                //is a hold
             }
-        
+            else if (touch.ended && (touch.screenPosition - touch.startScreenPosition).magnitude >SwipeLength) 
+            {
+                // drag
+            
+            } else if (touch.ended && touch.time - touch.startTime < holdTime)
+            {
+                //tap
+                manager1.actionController.Input(0);
+            }
+        }
+        if (minigame == Currentminigame.minigame1 && manager1!=null)
+        {
+            foreach (var touch in Touch.activeTouches)
+            {
+                manager3.Tap(touch);
+            }
+
+        }
+        else if (minigame == Currentminigame.minigame2)
+        {
+
+        }else if (minigame == Currentminigame.minigame3)
+        {
+
         }
         
     }
-    public void SelectComponent(int UID)
+    public void SetMiniGameState(int index)
     {
-        manager.ComponentInventory.ChangeSelected(UID);
+        index--;
+        switch (index)
+        {
+            case 0:
+                minigame = Currentminigame.minigame1;
+                break;
+            case 1:
+                minigame = Currentminigame.minigame2;
+                break;
+            case 2:
+                minigame = Currentminigame.minigame3;
+                break;
+        }
     }
+    
 }
