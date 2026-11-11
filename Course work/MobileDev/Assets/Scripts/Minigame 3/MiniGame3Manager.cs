@@ -28,9 +28,9 @@ public class MiniGame3Manager : MonoBehaviour
         Vector2 input = Camera.main.ScreenToWorldPoint(touch.screenPosition);
         Vector2 pos = new Vector2(Mathf.RoundToInt(input.x), Mathf.RoundToInt(input.y));
         if (touch.phase == TouchPhase.Began && pos.x <= gridManager.GetGridSize().x - 1 && pos.x >= 0 && pos.y <= gridManager.GetGridSize().y - 1 && pos.y >= 0)
-           {
+        {
                     Debug.Log("Tap");
                     gridManager.AddItem(pos);
-           }
+        }
     }
 }

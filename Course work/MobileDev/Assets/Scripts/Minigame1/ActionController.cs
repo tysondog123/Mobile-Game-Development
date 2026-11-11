@@ -15,7 +15,7 @@ public class ActionController : MonoBehaviour
     }
     MiniGame1Manager manager;
     Action currrentAction;
-    float waitTime;
+    float waitTime =.5f;
     bool awaitingInput= false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,9 +31,9 @@ public class ActionController : MonoBehaviour
     }
     void PickAction()
     {
-        int pickedAction =Random.Range(0, 6);
+        int pickedAction =Random.Range(0, 3);
         awaitingInput = true;
-        switch (0)
+        switch (pickedAction)
         {
             case 0:
                 currrentAction = Action.tap;
@@ -67,15 +67,18 @@ public class ActionController : MonoBehaviour
     }
     public void Input(int index)
     {
-        if(index == (int)currrentAction)
+        if (awaitingInput)
         {
-            awaitingInput = false;
-            StartCoroutine(DownTime());
-            manager.UIController.IsCorrect(true);
-        }
-        else
-        {
-            manager.UIController.IsCorrect(false);
+            if (index == (int)currrentAction)
+            {
+                awaitingInput = false;
+                StartCoroutine(DownTime());
+                manager.UIController.IsCorrect(true);
+            }
+            else
+            {
+                manager.UIController.IsCorrect(false);
+            }
         }
     }
     IEnumerator DownTime()

@@ -13,11 +13,12 @@ public class InputController : MonoBehaviour
     {
         minigame1,
         minigame2,
-        minigame3
+        minigame3,
+        mainMenu
     }
-    Currentminigame minigame;
+    Currentminigame minigame = Currentminigame.mainMenu;
     public MiniGame1Manager manager1;
-    //MiniGame2Manager manager2;
+    public MiniGame2Manager manager2;
     public MiniGame3Manager manager3;
 
     // Definitions of touchs
@@ -35,44 +36,46 @@ public class InputController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (var touch in Touch.activeTouches)
-        {
-            if (touch.ended && touch.time - touch.startTime > holdTime)
-            {
-                //is a hold
-            }
-            else if (touch.ended && (touch.screenPosition - touch.startScreenPosition).magnitude >SwipeLength) 
-            {
-                // drag
-            
-            } else if (touch.ended && touch.time - touch.startTime < holdTime)
-            {
-                //tap
-                manager1.actionController.Input(0);
-            }
-        }
+        
         if (minigame == Currentminigame.minigame1 && manager1!=null)
         {
             foreach (var touch in Touch.activeTouches)
             {
-                manager3.Tap(touch);
-            }
+                if (touch.ended && touch.time - touch.startTime > holdTime)
+                {
+                    //is a hold
+                    manager1.actionController.Input(1);
+                }
+                else if (touch.ended && (touch.screenPosition - touch.startScreenPosition).magnitude > SwipeLength)
+                {
+                    // drag
+                    manager1.actionController.Input(2);
 
+                }
+                else if (touch.ended && touch.time - touch.startTime < holdTime)
+                {
+                    //tap
+                    manager1.actionController.Input(0);
+                }
+            }
         }
         else if (minigame == Currentminigame.minigame2)
         {
 
         }else if (minigame == Currentminigame.minigame3)
         {
-
+            foreach (var touch in Touch.activeTouches)
+            {
+                manager3.Tap(touch);
+            }
         }
         
     }
-    public void SetMiniGameState(int index)
-    {
-        index--;
-        switch (index)
-        {
+       public void SetMiniGameState(int index)
+       {
+          index--;
+          switch (index)
+          {
             case 0:
                 minigame = Currentminigame.minigame1;
                 break;
@@ -82,7 +85,13 @@ public class InputController : MonoBehaviour
             case 2:
                 minigame = Currentminigame.minigame3;
                 break;
-        }
-    }
-    
+
+            case 4:
+                minigame = Currentminigame.mainMenu;
+                break;
+          }
+
+       }
+
+
 }
