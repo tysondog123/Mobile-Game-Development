@@ -15,7 +15,11 @@ public class productionManger : MonoBehaviour
     public void startProduction()
     {
         Components = manager.gridManager.GetList();
-        StartCoroutine(Productuion());
+        if(Components.Count > 0)
+        {
+            StartCoroutine(Productuion());
+        }
+       
     }
     IEnumerator Productuion()
     {
