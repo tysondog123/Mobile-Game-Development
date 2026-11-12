@@ -16,6 +16,7 @@ public class InputController : MonoBehaviour
         minigame3,
         mainMenu
     }
+    [SerializeField]
     Currentminigame minigame = Currentminigame.mainMenu;
     public MiniGame1Manager manager1;
     public MiniGame2Manager manager2;
@@ -30,6 +31,7 @@ public class InputController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        EnhancedTouchSupport.Enable();
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -39,8 +41,10 @@ public class InputController : MonoBehaviour
         
         if (minigame == Currentminigame.minigame1 && manager1!=null)
         {
+            Debug.Log(Touch.activeTouches.Count);
             foreach (var touch in Touch.activeTouches)
             {
+                
                 if (touch.ended && touch.time - touch.startTime > holdTime)
                 {
                     //is a hold
@@ -85,8 +89,7 @@ public class InputController : MonoBehaviour
             case 2:
                 minigame = Currentminigame.minigame3;
                 break;
-
-            case 4:
+            case 3:
                 minigame = Currentminigame.mainMenu;
                 break;
           }
