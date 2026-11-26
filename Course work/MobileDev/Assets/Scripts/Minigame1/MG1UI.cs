@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MG1UI : MonoBehaviour
@@ -32,12 +33,14 @@ public class MG1UI : MonoBehaviour
         if (match)
         {
             background.color = Color.green;
+            ProgressStore.Instance.Tracker.OnEnemyDefeated();
             StartCoroutine(Greentime());
         }
         else
         {
             background.color = Color.red;
-            StartCoroutine(Greentime());
+            ProgressStore.Instance.Tracker.OnLevelCompleted(1,1);
+            SceneManager.LoadScene(sceneBuildIndex: 0);
         }
     }
     IEnumerator Greentime()

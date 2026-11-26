@@ -68,8 +68,6 @@ public class ActionController : MonoBehaviour
     }
     public void Input(int index)
     {
-
-        Debug.Log("input called");
         if (awaitingInput)
         {
             if (index == (int)currrentAction)

@@ -41,7 +41,6 @@ public class InputController : MonoBehaviour
         
         if (minigame == Currentminigame.minigame1 && manager1!=null)
         {
-            Debug.Log(Touch.activeTouches.Count);
             foreach (var touch in Touch.activeTouches)
             {
                 
