@@ -37,6 +37,7 @@ public class MG1UI : MonoBehaviour
         else
         {
             background.color = Color.red;
+            manager.MissedAction();
             StartCoroutine(Greentime());
         }
     }
