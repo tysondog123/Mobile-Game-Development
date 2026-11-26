@@ -8,6 +8,7 @@ public class MiniGame3Manager : MonoBehaviour
 {
     public GridManager gridManager;
     public ComponentInventory ComponentInventory;
+    public productionManger productionManger;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,13 +25,15 @@ public class MiniGame3Manager : MonoBehaviour
     }
     public  void Tap(Touch touch)
     {
-
-        Vector2 input = Camera.main.ScreenToWorldPoint(touch.screenPosition);
-        Vector2 pos = new Vector2(Mathf.RoundToInt(input.x), Mathf.RoundToInt(input.y));
-        if (touch.phase == TouchPhase.Began && pos.x <= gridManager.GetGridSize().x - 1 && pos.x >= 0 && pos.y <= gridManager.GetGridSize().y - 1 && pos.y >= 0)
+        if (!productionManger.productionActive)
         {
-                    Debug.Log("Tap");
-                    gridManager.AddItem(pos);
+            Vector2 input = Camera.main.ScreenToWorldPoint(touch.screenPosition);
+            Vector2 pos = new Vector2(Mathf.RoundToInt(input.x), Mathf.RoundToInt(input.y));
+            if (touch.phase == TouchPhase.Began && pos.x <= gridManager.GetGridSize().x - 1 && pos.x >= 0 && pos.y <= gridManager.GetGridSize().y - 1 && pos.y >= 0)
+            {
+                Debug.Log("Tap");
+                gridManager.AddItem(pos);
+            }
         }
     }
 }

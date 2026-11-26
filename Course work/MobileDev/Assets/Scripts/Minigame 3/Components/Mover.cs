@@ -14,12 +14,12 @@ class Mover : Component
         if(gridManager.MoveOnGrid(transform.position,transform.position + direction) == 1)
         {
             direction = -direction;
-
             if (gridManager.MoveOnGrid(transform.position, transform.position + direction) == 1)
             {
                 Destroy(gameObject);
             }
         }
+        gridManager.MoveOnGrid(transform.position + (Vector3)handDirection, (transform.position + (Vector3)handDirection) + direction);
         return 0;
     }
 }

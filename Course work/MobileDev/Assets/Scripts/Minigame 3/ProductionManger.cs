@@ -8,12 +8,14 @@ public class productionManger : MonoBehaviour
     int current=0;
     MiniGame3Manager manager;
     List<GameObject> Components = new List<GameObject>();
+    public bool productionActive = false;
     private void Start()
     {
         manager = FindFirstObjectByType<MiniGame3Manager>();
     }
     public void startProduction()
     {
+        productionActive = true;
         Components = manager.gridManager.GetList();
         if(Components.Count > 0)
         {
